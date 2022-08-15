@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1660554350 source:d:\working\mentor\basic-cpp\bai1.cpp
+	<iostream>
+
+1660556045 source:d:\working\mentor\basic-cpp\main.cpp
+	<iostream>
+
+1660554659 source:d:\working\mentor\basic-cpp\bai2.cpp
+	<iostream>
+
+1660555104 source:d:\working\mentor\basic-cpp\bai3.cpp
+	<iostream>
+	<cmath>
+	<algorithm>
+
+1660555361 source:d:\working\mentor\basic-cpp\bai4.cpp
+	<iostream>
+
+1660555944 source:d:\working\mentor\basic-cpp\bai5.cpp
+	<iostream>
+
+1660556035 source:d:\working\mentor\basic-cpp\bai6.cpp
+	<iostream>
+
+1660556414 source:d:\working\mentor\basic-cpp\bai7.cpp
+	<iostream>
+
