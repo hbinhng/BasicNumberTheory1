@@ -2,7 +2,7 @@
 
 using namespace std;
 
-namespace bai8_internal {
+namespace bai8 {
     bool is_prime(int n) {
         if (n < 2) return false;
 
@@ -11,49 +11,47 @@ namespace bai8_internal {
 
         return true;
     }
-}
 
-void bai8_v_naive() {
-    using namespace bai8_internal;
+    void naive() {
+        int test_cases;
+        cin >> test_cases;
 
-    int test_cases;
-    cin >> test_cases;
+        for (int i = 1; i <= test_cases; i++) {
+            int a, b, count = 0;
 
-    for (int i = 1; i <= test_cases; i++) {
-        int a, b, count = 0;
+            cin >> a >> b;
 
-        cin >> a >> b;
+            for (int j = a; j <= b; j++) {
+                if (!is_prime(j)) continue;
 
-        for (int j = a; j <= b; j++) {
-            if (!is_prime(j)) continue;
+                int tmp = j, digit_sum = 0, digit;
+                bool has_none_prime_digit = false;
 
-            int tmp = j, digit_sum = 0, digit;
-            bool has_none_prime_digit = false;
+                while (tmp) {
+                    digit = tmp % 10;
 
-            while (tmp) {
-                digit = tmp % 10;
+                    if (digit != 2 && digit != 3 &&
+                        digit != 5 && digit != 7) {
+                        has_none_prime_digit = true;
+                        break;
+                    }
 
-                if (digit != 2 && digit != 3 &&
-                    digit != 5 && digit != 7) {
-                    has_none_prime_digit = true;
-                    break;
+                    digit_sum += digit;
+                    tmp /= 10;
                 }
 
-                digit_sum += digit;
-                tmp /= 10;
+                if (has_none_prime_digit) continue;
+
+                if (!is_prime(digit_sum)) continue;
+
+                ++count;
             }
 
-            if (has_none_prime_digit) continue;
-
-            if (!is_prime(digit_sum)) continue;
-
-            ++count;
+            cout << count << endl;
         }
-
-        cout << count << endl;
     }
-}
 
-void bai8() {
-    bai8_v_naive();
+    void solve() {
+        naive();
+    }
 }

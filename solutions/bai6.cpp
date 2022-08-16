@@ -2,9 +2,11 @@
 
 using namespace std;
 
-void bai2();
+namespace bai2 { void solve(); }
 
-void bai6() {
-    // Giống hệt bài 2, chỉ khác in từng dòng
-    bai2();
+namespace bai6 {
+    void solve() {
+        // Giống hệt bài 2, chỉ khác in từng dòng
+        bai2::main();
+    }
 }

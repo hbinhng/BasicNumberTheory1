@@ -2,12 +2,14 @@
 
 using namespace std;
 
-void bai1();
+namespace bai1 { void solve(); }
 
-void bai4() {
-    int test_cases;
-    cin >> test_cases;
+namespace bai4 {
+    void solve() {
+        int test_cases;
+        cin >> test_cases;
 
-    for (int i = 1; i <= test_cases; i++)
-        bai1();
+        for (int i = 1; i <= test_cases; i++)
+            bai1::main();
+    }
 }

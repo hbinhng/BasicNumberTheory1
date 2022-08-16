@@ -2,16 +2,16 @@
 
 using namespace std;
 
-void bai1();
-void bai2();
-void bai3();
-void bai4();
-void bai5();
-void bai6();
-void bai7();
-void bai8();
+namespace bai1 { void solve(); }
+namespace bai2 { void solve(); }
+namespace bai3 { void solve(); }
+namespace bai4 { void solve(); }
+namespace bai5 { void solve(); }
+namespace bai6 { void solve(); }
+namespace bai7 { void solve(); }
+namespace bai8 { void solve(); }
 
 int main()
 {
-    bai8();
+    bai8::solve();
 }
