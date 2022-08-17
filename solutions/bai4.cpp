@@ -10,6 +10,6 @@ namespace bai4 {
         cin >> test_cases;
 
         for (int i = 1; i <= test_cases; i++)
-            bai1::main();
+            bai1::solve();
     }
 }
