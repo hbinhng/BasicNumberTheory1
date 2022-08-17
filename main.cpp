@@ -10,8 +10,9 @@ namespace bai5 { void solve(); }
 namespace bai6 { void solve(); }
 namespace bai7 { void solve(); }
 namespace bai8 { void solve(); }
+namespace bai9 { void solve(); }
 
 int main()
 {
-    bai8::solve();
+    bai9::solve();
 }
