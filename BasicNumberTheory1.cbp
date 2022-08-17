@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="basic-cpp" />
+		<Option title="BasicNumberTheory1" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/basic-cpp" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/BasicNumberTheory1" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/basic-cpp" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/BasicNumberTheory1" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -41,6 +41,7 @@
 		<Unit filename="solutions/bai6.cpp" />
 		<Unit filename="solutions/bai7.cpp" />
 		<Unit filename="solutions/bai8.cpp" />
+		<Unit filename="solutions/bai9.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
