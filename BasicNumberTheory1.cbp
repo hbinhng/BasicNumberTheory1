@@ -34,6 +34,9 @@
 		</Compiler>
 		<Unit filename="main.cpp" />
 		<Unit filename="solutions/bai1.cpp" />
+		<Unit filename="solutions/bai10.cpp" />
+		<Unit filename="solutions/bai11.cpp" />
+		<Unit filename="solutions/bai12.cpp" />
 		<Unit filename="solutions/bai2.cpp" />
 		<Unit filename="solutions/bai3.cpp" />
 		<Unit filename="solutions/bai4.cpp" />
