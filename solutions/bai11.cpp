@@ -37,7 +37,7 @@ namespace bai11 {
         cin >> test_cases;
 
         for (int i = 1; i <= test_cases; i++) {
-            int n;
+            int64_t n;
             cin >> n;
 
             /**
