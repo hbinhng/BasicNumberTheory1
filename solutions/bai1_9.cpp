@@ -2,7 +2,7 @@
 
 using namespace std;
 
-namespace bai9 {
+namespace bai1_9 {
     void solve() {
         int a, b;
         cin >> a >> b;

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-namespace bai12 {
+namespace bai1_12 {
     void solve() {
         int bound = 1e6;
         bool *is_prime = new bool[bound + 1];

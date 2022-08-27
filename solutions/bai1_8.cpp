@@ -2,7 +2,7 @@
 
 using namespace std;
 
-namespace bai8 {
+namespace bai1_8 {
     bool is_prime(int n) {
         if (n < 2) return false;
 

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-namespace bai7 {
+namespace bai1_7 {
     void solve() {
         // Tạo 1 sàng nguyên tố cỡ 10^4 phần tử
         const int upr_bound = 1e4 - 1;

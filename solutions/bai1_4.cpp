@@ -4,7 +4,7 @@ using namespace std;
 
 namespace bai1 { void solve(); }
 
-namespace bai4 {
+namespace bai1_4 {
     void solve() {
         int test_cases;
         cin >> test_cases;

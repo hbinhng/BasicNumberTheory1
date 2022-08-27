@@ -2,7 +2,7 @@
 
 using namespace std;
 
-namespace bai10 {
+namespace bai1_10 {
     /**
       * Các số có đúng ba ước số chỉ có thể có các ước:
       * - 1
