@@ -4,41 +4,67 @@
 using namespace std;
 
 namespace bai3_33 {
-    int degree(int n, int p){
-        int ans = 0;
-        for (int i = p; i <= n; i += p) {
+    /*
+     * Mảng này sẽ lưu ước nguyên tố lớn nhất của
+     * số thứ i
+     */
+    int *enhanced_prime_sieve = new int[101];
+
+    void initialize() {
+        for (int i = 0; i <= 100; i++)
+            enhanced_prime_sieve[i] = i;
+
+        for (int i = 2; i <= 100; i++)
+            if (enhanced_prime_sieve[i] == i)
+                for (int j = 2; j * i <= 100; j++)
+                    enhanced_prime_sieve[i * j] = i;
+    }
+
+    /*
+     * Để giải bài toán này, ta cần phân tích n! ra
+     * các thừa số nguyên tố: a^b . c^d . e^f ... y^z
+     * và đáp án của bài toán là số cách chọn các ước
+     * nguyên tố kia gộp lại với nhau:
+     * (b+1).(d+1).(f+1)...(z+1)
+     */
+    int64_t count_divisor(int n) {
+        int *prime_divisor_counts = new int[101];
+
+        for (int i = 0; i <= 100; i++)
+            prime_divisor_counts[i] = 0;
+
+        for (int i = 2; i <= n; i++) {
             int tmp = i;
-            while (tmp % p == 0) {
-                ++ans;
-                tmp /= p;
-            }
-        }
-        return ans;
-    }
 
-    int nt(int n) {
-        for (int i = 2; i <= sqrt(n); i++)
-            if (n % i == 0)
-                return 0;
-        return n;
-    }
+            do {
+                prime_divisor_counts[enhanced_prime_sieve[tmp]]++;
 
-    long long countDivisor(int n) {
-        long long res = 1;
-        for (int i = 1; i <= n; i++) {
-            if(nt(i))
-                res *= (degree(n, i) + 1);
+                tmp /= enhanced_prime_sieve[tmp];
+            } while (tmp != 1);
         }
-        return res;
+
+        int64_t result = 1;
+
+        for (int i = 2; i <= 100; i++)
+            if (prime_divisor_counts[i] != 0)
+                result *= (prime_divisor_counts[i] + 1);
+
+        return result;
     }
 
     void solve() {
-        int t;
-        cin >> t;
-        while (t--) {
+        initialize();
+
+        int test_cases;
+
+        cin >> test_cases;
+
+        while (test_cases--) {
             int n;
+
             cin >> n;
-            cout << countDivisor(n) << endl;
+
+            cout << count_divisor(n) << endl;
         }
     }
 }
