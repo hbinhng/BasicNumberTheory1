@@ -33,18 +33,19 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
-		<Unit filename="solutions/bai1.cpp" />
-		<Unit filename="solutions/bai10.cpp" />
-		<Unit filename="solutions/bai11.cpp" />
-		<Unit filename="solutions/bai12.cpp" />
-		<Unit filename="solutions/bai2.cpp" />
-		<Unit filename="solutions/bai3.cpp" />
-		<Unit filename="solutions/bai4.cpp" />
-		<Unit filename="solutions/bai5.cpp" />
-		<Unit filename="solutions/bai6.cpp" />
-		<Unit filename="solutions/bai7.cpp" />
-		<Unit filename="solutions/bai8.cpp" />
-		<Unit filename="solutions/bai9.cpp" />
+		<Unit filename="solutions/bai1_1.cpp" />
+		<Unit filename="solutions/bai1_10.cpp" />
+		<Unit filename="solutions/bai1_11.cpp" />
+		<Unit filename="solutions/bai1_12.cpp" />
+		<Unit filename="solutions/bai1_2.cpp" />
+		<Unit filename="solutions/bai1_3.cpp" />
+		<Unit filename="solutions/bai1_4.cpp" />
+		<Unit filename="solutions/bai1_5.cpp" />
+		<Unit filename="solutions/bai1_6.cpp" />
+		<Unit filename="solutions/bai1_7.cpp" />
+		<Unit filename="solutions/bai1_8.cpp" />
+		<Unit filename="solutions/bai1_9.cpp" />
+		<Unit filename="solutions/bai3_33.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
