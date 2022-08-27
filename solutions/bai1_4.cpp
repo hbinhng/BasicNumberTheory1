@@ -2,7 +2,7 @@
 
 using namespace std;
 
-namespace bai1 { void solve(); }
+namespace bai1_1 { void solve(); }
 
 namespace bai1_4 {
     void solve() {
@@ -10,6 +10,6 @@ namespace bai1_4 {
         cin >> test_cases;
 
         for (int i = 1; i <= test_cases; i++)
-            bai1::solve();
+            bai1_1::solve();
     }
 }
