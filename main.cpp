@@ -19,5 +19,5 @@ namespace bai3_33 { void solve(); }
 
 int main()
 {
-    bai3::solve();
+    bai3_33::solve();
 }
